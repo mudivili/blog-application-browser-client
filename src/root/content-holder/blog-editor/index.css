@@ -1,0 +1,33 @@
+#blog-editor {}
+
+.ck-editor__editable_inline {
+    min-height: 400px;
+}
+
+#blog-editor #blog-editor-form {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 5px;
+}
+
+#blog-editor-form .blog-editor-form-row {
+  display: grid;
+  grid-template-rows: auto 30px;
+  grid-row-gap: 0px;
+}
+
+#blog-editor-form .blog-editor-form-input {}
+
+#blog-editor-form .blog-editor-form-error-label {
+  color:  red;
+}
+
+.blog-editor-content-row {
+  width: 100%;
+}
+
+#blog-editor-form .blog-editor-form-row.post-button-row {
+  grid-template-rows: unset;
+  grid-template-columns: 100px 30px;
+  grid-column-gap: 30px;
+}

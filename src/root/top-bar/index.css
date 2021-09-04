@@ -1,0 +1,31 @@
+#top-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70px;
+}
+
+#top-bar .left-section {
+  height: 70px;
+	line-height: 70px;
+}
+
+.left-section a:active, .left-section a:hover, .left-section a:visited {
+  color:  unset;
+}
+
+#top-bar .right-section {
+
+	height: 70px;
+	line-height: 70px;
+	text-align: right;
+
+}
+
+.application-title {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #0078e7;
+}

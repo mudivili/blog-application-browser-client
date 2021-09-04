@@ -1,0 +1,30 @@
+.blog-row {
+  border: 1px solid #dcd5d5;
+  margin: 10px 0;
+  padding: 25px;
+}
+
+.blog-row a {
+  color: unset;
+  text-decoration: none;
+}
+
+.blog-row a:active,
+.blog-row a:hover,
+.blog-row a:visited {
+  color: unset;
+}
+
+.blog-row .blog-title {
+  margin-top: 8px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0078e7;
+}
+
+.blog-row .content {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #989898;
+  max-height: 50px;
+}

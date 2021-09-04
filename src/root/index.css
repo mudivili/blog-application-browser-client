@@ -1,0 +1,23 @@
+#root-main {
+  display: grid;
+  grid-template-rows: 70px auto;
+}
+
+#top-bar-container {
+  height: 70px;
+  padding: 0px 15%;
+  border: 0 solid #d4d0d0;
+  border-width: 0px 0 1px 0;
+  position: fixed;
+  top:  0;
+  left:  0;
+  background-color: #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+#content-holder-container {
+  margin-top: 70px;
+  padding: 30px 15%;
+}
