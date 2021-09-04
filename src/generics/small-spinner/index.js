@@ -4,7 +4,7 @@ import './index.css';
 
 function SmallSpinner() {
   return <div className="small-spinner">
-		<div class="loadingio-spinner-dual-ring-fryzzprhjlv"><div class="ldio-01vka199bynm">
+		<div className="loadingio-spinner-dual-ring-fryzzprhjlv"><div className="ldio-01vka199bynm">
 			<div></div><div><div></div></div>
 			</div></div>
 		</div>;
