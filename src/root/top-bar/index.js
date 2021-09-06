@@ -12,10 +12,9 @@ function TopBar() {
 
   function navigate() {
 
-    if(location.pathname !== '/') {
+    if (location.pathname !== '/') {
       history.push('/');
-    }
-    else {
+    } else {
       history.push('/blogs/create');
     }
 
@@ -25,7 +24,7 @@ function TopBar() {
 
     let label = 'POST';
 
-    if(location.pathname !== '/') {
+    if (location.pathname !== '/') {
       label = 'BACK';
     }
 

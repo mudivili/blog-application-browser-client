@@ -4,11 +4,20 @@
 }
 
 @keyframes ldio-01vka199bynm {
-  0% { transform: rotate(0) }
-  100% { transform: rotate(360deg) }
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
 }
-.ldio-01vka199bynm div { box-sizing: border-box!important }
-.ldio-01vka199bynm > div {
+
+.ldio-01vka199bynm div {
+  box-sizing: border-box !important
+}
+
+.ldio-01vka199bynm>div {
   position: absolute;
   width: 72px;
   height: 72px;
@@ -19,14 +28,20 @@
   border-color: #0078e7 transparent #0078e7 transparent;
   animation: ldio-01vka199bynm 1s linear infinite;
 }
-.ldio-01vka199bynm > div:nth-child(2) { border-color: transparent }
-.ldio-01vka199bynm > div:nth-child(2) div {
+
+.ldio-01vka199bynm>div:nth-child(2) {
+  border-color: transparent
+}
+
+.ldio-01vka199bynm>div:nth-child(2) div {
   position: absolute;
   width: 100%;
   height: 100%;
   transform: rotate(45deg);
 }
-.ldio-01vka199bynm > div:nth-child(2) div:before, .ldio-01vka199bynm > div:nth-child(2) div:after { 
+
+.ldio-01vka199bynm>div:nth-child(2) div:before,
+.ldio-01vka199bynm>div:nth-child(2) div:after {
   content: "";
   display: block;
   position: absolute;
@@ -38,11 +53,13 @@
   border-radius: 50%;
   box-shadow: 0 64px 0 0 #0078e7;
 }
-.ldio-01vka199bynm > div:nth-child(2) div:after { 
+
+.ldio-01vka199bynm>div:nth-child(2) div:after {
   left: -8px;
   top: 24px;
   box-shadow: 64px 0 0 0 #0078e7;
 }
+
 .loadingio-spinner-dual-ring-fryzzprhjlv {
   width: 35px;
   height: 35px;
@@ -50,12 +67,17 @@
   overflow: hidden;
   background: none;
 }
+
 .ldio-01vka199bynm {
   width: 100%;
   height: 100%;
   position: relative;
   transform: translateZ(0) scale(0.35);
   backface-visibility: hidden;
-  transform-origin: 0 0; /* see note above */
+  transform-origin: 0 0;
+  /* see note above */
 }
-.ldio-01vka199bynm div { box-sizing: content-box; }
+
+.ldio-01vka199bynm div {
+  box-sizing: content-box;
+}

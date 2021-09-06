@@ -1,17 +1,7 @@
-#blog-viewer {
+#blog-viewer {}
 
+#blog-viewer #blog-display {}
 
+#blog-display>h2 {}
 
-}
-
-#blog-viewer #blog-display {
-  
-}
-
-#blog-display > h2 {
-  
-}
-
-#blog-display > div {
-  
-}
+#blog-display>div {}

@@ -20,16 +20,16 @@ function BlogsListing(props) {
   }, []);
 
   async function loadBlogs() {
-    
+
     const _blogs = await serverInterface.getAllBlogs({
       sortOptions: {
         createdAt: -1
       }
     });
-    
+
     setBlogs(_blogs);
     setBlogsLoaded(true);
-    
+
   }
 
   function viewBlog(blogId) {
@@ -37,8 +37,8 @@ function BlogsListing(props) {
   }
 
   function renderLoadingIndicator() {
-    
-    if(blogsLoaded === true) {
+
+    if (blogsLoaded === true) {
       return;
     }
 
@@ -47,20 +47,20 @@ function BlogsListing(props) {
   }
 
   function renderBlog(blog) {
-    
+
     return <BlogRow {...blog} id={blog._id} key={blog._id} rowClickHandler={viewBlog} />;
 
   }
 
   function renderBlogs() {
-    
-    if(blogsLoaded === false) {
+
+    if (blogsLoaded === false) {
       return;
     }
 
     let blogFragments = [];
 
-    for(let blog of blogs) {
+    for (let blog of blogs) {
 
       blogFragments.push(renderBlog(blog));
 

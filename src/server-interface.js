@@ -12,19 +12,19 @@ class ServerInterface {
 
   async getBlogById(blogId) {
 
-  	return this.get(`/blog/${blogId}`);
+    return this.get(`/blog/${blogId}`);
 
   }
 
   async getAllBlogs(queryOptions) {
 
-  	return this.get('/blog/list', queryOptions);
+    return this.get('/blog/list', queryOptions);
 
   }
 
   async saveBlog(blog) {
 
-  	return this.post('/blog/create', blog);
+    return this.post('/blog/create', blog);
 
   }
 
@@ -44,7 +44,7 @@ class ServerInterface {
 
     var url = new URL(this.baseURL + path);
     url.search = new URLSearchParams({ queryOptions: JSON.stringify(queryOptions) }).toString()
-    
+
     const options = {
       method,
       headers: {
@@ -52,14 +52,14 @@ class ServerInterface {
       }
     };
 
-    if(['POST', 'PUT'].indexOf(method) !== -1) {
-    	options.body = JSON.stringify(payload);
+    if (['POST', 'PUT'].indexOf(method) !== -1) {
+      options.body = JSON.stringify(payload);
     }
 
     const response = await fetch(url, options);
-    
+
     const result = await response.json();
-    
+
     if (result.success === false) {
       throw result.data;
     }

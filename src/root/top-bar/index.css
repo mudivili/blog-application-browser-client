@@ -6,18 +6,20 @@
 
 #top-bar .left-section {
   height: 70px;
-	line-height: 70px;
+  line-height: 70px;
 }
 
-.left-section a:active, .left-section a:hover, .left-section a:visited {
-  color:  unset;
+.left-section a:active,
+.left-section a:hover,
+.left-section a:visited {
+  color: unset;
 }
 
 #top-bar .right-section {
 
-	height: 70px;
-	line-height: 70px;
-	text-align: right;
+  height: 70px;
+  line-height: 70px;
+  text-align: right;
 
 }
 

@@ -7,17 +7,17 @@ function DefaultButton(props) {
 
   let clickHandler = props.onClick;
 
-  if(typeof props.onClick !== 'function') {
+  if (typeof props.onClick !== 'function') {
     clickHandler = function emptyHandler(id) {
       console.log(`Handler is not registered for ${id}`);
     }
   }
 
   function defaultHandler(event) {
-    
+
     clickHandler(props.id, event);
 
-  }  
+  }
 
   return (
     <button type="button" id={props.id} className="default-button pure-button pure-button-primary" onClick={defaultHandler}>{props.label}</button>

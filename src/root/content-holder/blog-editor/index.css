@@ -1,7 +1,7 @@
 #blog-editor {}
 
 .ck-editor__editable_inline {
-    min-height: 400px;
+  min-height: 400px;
 }
 
 #blog-editor #blog-editor-form {
@@ -19,7 +19,7 @@
 #blog-editor-form .blog-editor-form-input {}
 
 #blog-editor-form .blog-editor-form-error-label {
-  color:  red;
+  color: red;
 }
 
 .blog-editor-content-row {

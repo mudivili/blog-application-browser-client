@@ -90,8 +90,7 @@ function BlogEditor(props) {
 
       if (exception.name === 'ValidationError') {
         handleValidationErrors(exception.errors);
-      }
-      else {
+      } else {
         gotoBlogListing();
       }
 
@@ -191,7 +190,7 @@ function BlogEditor(props) {
 
   function renderSpinner() {
 
-    if(storing === false) {
+    if (storing === false) {
       return;
     }
 
